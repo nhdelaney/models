@@ -27,6 +27,16 @@ for album_num in reversed(sorted(list(albums.keys()))):
     album_html = album_html.replace('$$title$$', album['content']['title'])
     album_html = album_html.replace('$$description$$', album['content']['description'])
 
+    colour_html = ''
+    colour_split = []
+    for colour in album['content']['colours']:
+        colour_split = colour.split(":", 1)
+        if len(colour_split) > 1:
+            colour_html += '\t\t\t\t<li><b>' + colour_split[0] + ':</b><i>' + colour_split[1] + '</i></li>'
+        else:
+            colour_html += '\t\t\t\t<li>' + colour_split[0] + '</li>'
+    album_html = album_html.replace('$$colours$$', colour_html)
+
     if album_i%4 == 0:
         index_image_html += '\t\t<div class="w3-row-padding">\n'
     index_image_html += ('\t\t\t<div class="w3-quarter">\n'

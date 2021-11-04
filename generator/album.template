@@ -33,5 +33,11 @@ $$col_2$$
 $$col_3$$
 			</div>
 		</div>
+		<div class="w3-container w3-border-top w3-margin-top w3-margin-left w3-margin-right">
+			<h1>Paints Used:</h1>
+			<ul>
+$$colours$$
+			</ul>
+		</div>
 	</body>
 </html>
