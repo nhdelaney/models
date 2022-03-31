@@ -43,7 +43,7 @@ for album_num in reversed(sorted(list(albums.keys()))):
                          '\t\t\t\t<div class="w3-card w3-hover-shadow">\n'
                          '\t\t\t\t\t<a href="models/' + album['path'] + '/album.html">\n'
                          '\t\t\t\t\t\t<img src="models/' + album['path'] + '/cover.jpg" '
-                         'class="w3-image w3-round" alt="' + album['content']['title'] + '">\n'
+                         'class="w3-image w3-round w3-block" alt="' + album['content']['title'] + '">\n'
                          '\t\t\t\t\t\t<div class="w3-container w3-center">\n'
                          '\t\t\t\t\t\t\t<p>' + album['content']['title'] + '</p>\n'
                          '\t\t\t\t\t\t</div>\n'
@@ -58,7 +58,7 @@ for album_num in reversed(sorted(list(albums.keys()))):
     col_2_html=''
     col_3_html=''
     for i in range(len(album['images'])):
-        image_html = '\t\t\t\t<img src="' + album['images'][i] + '" class="w3-margin-bottom w3-image w3-round">\n'
+        image_html = '\t\t\t\t<img src="' + album['images'][i] + '" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">\n'
         col = album['images'][i].split('_')[0]
         if col == '1':
             col_1_html += image_html

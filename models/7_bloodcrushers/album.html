@@ -12,6 +12,9 @@
 				top: 0px;
 				left: 0px;
 			}
+			#modalImage {
+				width: 100%;
+			}
 		</style>
 	</head>
 	<body class="w3-2017-shaded-spruce">
@@ -24,19 +27,19 @@
 		</div>
 		<div class="w3-row-padding">
 			<div class="w3-third">
-				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round">
-				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round">
-				<img src="1_3.jpg" class="w3-margin-bottom w3-image w3-round">
+				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_3.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
 
 			</div>
 			<div class="w3-third">
-				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round">
-				<img src="2_2.jpg" class="w3-margin-bottom w3-image w3-round">
+				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="2_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
 
 			</div>
 			<div class="w3-third">
-				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round">
-				<img src="3_2.jpg" class="w3-margin-bottom w3-image w3-round">
+				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="3_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
 
 			</div>
 		</div>
@@ -46,5 +49,16 @@
 				<li><b>Bloodletter Skin:</b><i> Mephistion Red, Carroburg Crimson all over, drybrush Evil Sunz Scarlet, Carroburg Crimson again on fins, light drybrush and highlight Wild Rider Red</i></li>				<li><b>Armour:</b><i> Khorne Red, Nuln Oil in recesses, edge highlight Evil Sunz Scarlet and Wild Rider Red</i></li>				<li><b>Armour Scratches:</b><i> Leadbelcher, Nuln Oil in scratches, highlight Stormhost Silver on one side</i></li>				<li><b>Rivets:</b><i> Stormhost Silver</i></li>				<li><b>Mechanical Pieces/Steel:</b><i> Leadbelcher, Nuln Oil all over, highlight and edge highlight Stormhost Silver</i></li>				<li><b>Bronze:</b><i> Balthasar Gold, Reikland Fleshshade all over, highlight Sycorax Bronze, minimal edge highlight Stormhost Silver</i></li>				<li><b>Skulls:</b><i> Zandri Dust, Seraphim Sepia all over, highlight Ushabti Bone, hightlight bright parts with Screaming Skull</i></li>				<li><b>Horn (instrument):</b><i> Same as skulls, but with Carroburg Crimson in runes</i></li>				<li><b>Horns:</b><i> Abaddon Black, drybrush Eshin Grey and Dawnstone on tips, all over for leader horns, Arcdoat</i></li>				<li><b>Eyes:</b><i> Vallejo White, Flash Gitz Yellow</i></li>				<li><b>Tongue:</b><i> Screamer Pink, Druchii Violet all over, highlight Pink Horror, Ardcoat</i></li>				<li><b>Teeth:</b><i> Rakarth Flash, Reikland Fleshshade all over, highlight Pallid Wych Flesh</i></li>				<li><b>Sword Hilt:</b><i> Abaddon Grey, highlight Eshin Grey and Dawnstone</i></li>				<li><b>Sword Blade:</b><i> Abaddon Black, alternate wet Mephiston Red and Flash Gitz Yellow on edge, Ardcoat all over</i></li>				<li><b>Sword Tip:</b><i> drybrush Mephiston Red and Flash Gitz Yellow, edge highlight tip with Flash Gitz Yellow, single point of Vallejo White, Ardcoat</i></li>				<li><b>Base Rock:</b><i> Astrogranite, Nuln Oil all over, no highlight to look darker</i></li>				<li><b>Base Lava:</b><i> Mephiston Red, wet blend Mephiston Red and Flash Gitz yellow, very thing Vallejo White over brightest spots</i></li>
 			</ul>
 		</div>
+
+		<div id="imageModal" class="w3-modal" onclick="this.style.display='none'">
+			<img class="w3-modal-content w3-block" id="modalImage">
+		</div>
+
+		<script>
+			function showImage(image) {
+				document.getElementById("modalImage").src = image.src;
+				document.getElementById("imageModal").style.display = "block";
+			}
+		</script>
 	</body>
 </html>

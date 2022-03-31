@@ -12,6 +12,9 @@
 				top: 0px;
 				left: 0px;
 			}
+			#modalImage {
+				width: 100%;
+			}
 		</style>
 	</head>
 	<body class="w3-2017-shaded-spruce">
@@ -24,18 +27,18 @@
 		</div>
 		<div class="w3-row-padding">
 			<div class="w3-third">
-				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round">
-				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round">
+				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
 
 			</div>
 			<div class="w3-third">
-				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round">
-				<img src="2_2.jpg" class="w3-margin-bottom w3-image w3-round">
+				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="2_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
 
 			</div>
 			<div class="w3-third">
-				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round">
-				<img src="3_2.jpg" class="w3-margin-bottom w3-image w3-round">
+				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="3_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
 
 			</div>
 		</div>
@@ -45,5 +48,16 @@
 				<li><b>Green:</b><i> Waaagh Flesh, Biel-tan Green all over, highlight Warboss Green and Skarsnik Green</i></li>				<li><b>Steel:</b><i> Leadbelcher, Nuln Oil all over, edge hightlight Stormhost Silver</i></li>				<li><b>Brass:</b><i> Runelord Brass, Nuln Oil all over, highlight Liberator Gold and Auric Armour Gold</i></li>				<li><b>Black:</b><i> Abaddon Black, edge highlight Eshin Grey and Dawnstone</i></li>				<li><b>Leather:</b><i> Dryad Bark, Agrax Earthshade all over, edge highlight Gorthor Brown</i></li>				<li><b>Bone/Teeth/Claws:</b><i> Zandri Dust, Seraphim Sepia all over, highlight Ushabti Bone and Screaming Skull</i></li>				<li><b>Lenses:</b><i> Corax White, Coelia Greenshade/Carroburg Crimson, second layer of shade along the bottom, dot of Corax White in the top, Arcdoat</i></li>				<li><b>Eyes:</b><i> Mephiston Red, Ardcoat</i></li>				<li><b>Base:</b><i> Stirland Mud, Agrax Earthshade, drybrush Ushabti Bone, Steel Legion Drab rim</i></li>
 			</ul>
 		</div>
+
+		<div id="imageModal" class="w3-modal" onclick="this.style.display='none'">
+			<img class="w3-modal-content w3-block" id="modalImage">
+		</div>
+
+		<script>
+			function showImage(image) {
+				document.getElementById("modalImage").src = image.src;
+				document.getElementById("imageModal").style.display = "block";
+			}
+		</script>
 	</body>
 </html>

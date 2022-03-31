@@ -12,6 +12,9 @@
 				top: 0px;
 				left: 0px;
 			}
+			#modalImage {
+				width: 100%;
+			}
 		</style>
 	</head>
 	<body class="w3-2017-shaded-spruce">
@@ -24,16 +27,16 @@
 		</div>
 		<div class="w3-row-padding">
 			<div class="w3-third">
-				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round">
-				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round">
+				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
 
 			</div>
 			<div class="w3-third">
-				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round">
+				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
 
 			</div>
 			<div class="w3-third">
-				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round">
+				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
 
 			</div>
 		</div>
@@ -43,5 +46,16 @@
 				<li><b>Bone:</b><i> Zandri Dust, Seraphim Sepia all over, drybrush Ushabti Bone and Screaming Skull</i></li>				<li><b>Metal:</b><i> Leadbelcher, Nuln Oil all over, edge hightlight Stormhost Silver</i></li>				<li><b>Wood/Leather:</b><i> Dryad Bark, Agrax Earthshade all over, edge highlight Gorthor Brown</i></li>				<li><b>Fabric:</b><i> Mephiston Red, Carroburg Crimson all over, highlight Mephiston Red</i></li>				<li><b>Horn:</b><i> Retributor Armour, Reikland Fleshshade, highlight Liberator Gold</i></li>				<li><b>Base:</b><i> Vallejo Brown Earth, Agrax Earthshade, drybrush Screaming Skull, Steel Legion Drab rim, Gamers Grass TinyTufts Beige</i></li>
 			</ul>
 		</div>
+
+		<div id="imageModal" class="w3-modal" onclick="this.style.display='none'">
+			<img class="w3-modal-content w3-block" id="modalImage">
+		</div>
+
+		<script>
+			function showImage(image) {
+				document.getElementById("modalImage").src = image.src;
+				document.getElementById("imageModal").style.display = "block";
+			}
+		</script>
 	</body>
 </html>

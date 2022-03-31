@@ -12,6 +12,9 @@
 				top: 0px;
 				left: 0px;
 			}
+			#modalImage {
+				width: 100%;
+			}
 		</style>
 	</head>
 	<body class="w3-2017-shaded-spruce">
@@ -39,5 +42,16 @@ $$col_3$$
 $$colours$$
 			</ul>
 		</div>
+
+		<div id="imageModal" class="w3-modal" onclick="this.style.display='none'">
+			<img class="w3-modal-content w3-block" id="modalImage">
+		</div>
+
+		<script>
+			function showImage(image) {
+				document.getElementById("modalImage").src = image.src;
+				document.getElementById("imageModal").style.display = "block";
+			}
+		</script>
 	</body>
 </html>
