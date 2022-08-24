@@ -18,7 +18,7 @@ for album in Path(__file__).parent.with_name('models').iterdir():
     for content in Path(album).glob('content.json'):
         albums[album_name]['content'] = json.load(content.open())
 
-album_i = 0
+# album_i = 0
 index_image_html = ''
 
 for album_num in reversed(sorted(list(albums.keys()))):
@@ -37,9 +37,17 @@ for album_num in reversed(sorted(list(albums.keys()))):
             colour_html += '\t\t\t\t<li>' + colour_split[0] + '</li>'
     album_html = album_html.replace('$$colours$$', colour_html)
 
-    if album_i%4 == 0:
-        index_image_html += '\t\t<div class="w3-row-padding">\n'
-    index_image_html += ('\t\t\t<div class="w3-quarter">\n'
+    album_categories = ''
+    album_style = ''
+    for i in range(len(album['content']['category'])):
+        album_categories += album['content']['category'][i]
+        if album['content']['category'][i] == 'Extra':
+            album_style = ' style="display: none"'
+        if i < len(album['content']['category']) - 1:
+            album_categories += ' '
+        
+
+    index_image_html += ('\t\t\t<div class="w3-col m4 l3 w3-padding-small album ' + album_categories + '"' + album_style + '>\n'
                          '\t\t\t\t<div class="w3-card w3-hover-shadow">\n'
                          '\t\t\t\t\t<a href="models/' + album['path'] + '/album.html">\n'
                          '\t\t\t\t\t\t<img src="models/' + album['path'] + '/cover.jpg" '
@@ -50,9 +58,6 @@ for album_num in reversed(sorted(list(albums.keys()))):
                          '\t\t\t\t\t</a>\n'
                          '\t\t\t\t</div>\n'
 			             '\t\t\t</div>\n')
-    if album_i%4 == 3 or album_i == len(albums)-1:
-        index_image_html += '\t\t</div>'
-    album_i += 1
     
     col_1_html=''
     col_2_html=''

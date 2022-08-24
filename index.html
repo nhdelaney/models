@@ -16,11 +16,78 @@
 		</style>
 	</head>
 	<body class="w3-2017-shaded-spruce">
-		<div class="w3-container w3-center w3-border-bottom w3-margin-bottom w3-margin-left w3-margin-right">
+		<div class="w3-container w3-center w3-border-bottom w3-margin-left w3-margin-right">
 			<h1>Pictures of my Models</h1>
 		</div>
-		<div class="w3-row-padding">
-			<div class="w3-quarter">
+		<div class="w3-container w3-center w3-border-bottom w3-margin-bottom w3-margin-left w3-margin-right">
+			<button id="showAll" class="w3-button filter" style="display: none" onclick="filter(this)" disabled>Show All</button>
+			<button id="40k" class="w3-button filter" onclick="filter(this)">Warhammer 40000</button>
+			<button id="AoS" class="w3-button filter" onclick="filter(this)">Age of Sigmar</button>
+			<button id="Other" class="w3-button filter" onclick="filter(this)">Other</button>
+			<button id="Extra" class="w3-button filter" onclick="filter(this)">Extra</button>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col m4 l3 w3-padding-small album AoS">
+				<div class="w3-card w3-hover-shadow">
+					<a href="models/27_chaos_lord_karkadrak/album.html">
+						<img src="models/27_chaos_lord_karkadrak/cover.jpg" class="w3-image w3-round w3-block" alt="Chaos Lord on Karkadrak">
+						<div class="w3-container w3-center">
+							<p>Chaos Lord on Karkadrak</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="w3-col m4 l3 w3-padding-small album Extra" style="display: none">
+				<div class="w3-card w3-hover-shadow">
+					<a href="models/26_skink_handler/album.html">
+						<img src="models/26_skink_handler/cover.jpg" class="w3-image w3-round w3-block" alt="Wife's First Model">
+						<div class="w3-container w3-center">
+							<p>Wife's First Model</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="w3-col m4 l3 w3-padding-small album AoS">
+				<div class="w3-card w3-hover-shadow">
+					<a href="models/25_black_knights/album.html">
+						<img src="models/25_black_knights/cover.jpg" class="w3-image w3-round w3-block" alt="Black Knights">
+						<div class="w3-container w3-center">
+							<p>Black Knights</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
+				<div class="w3-card w3-hover-shadow">
+					<a href="models/24_sentinel/album.html">
+						<img src="models/24_sentinel/cover.jpg" class="w3-image w3-round w3-block" alt="Sentinel">
+						<div class="w3-container w3-center">
+							<p>Sentinel</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
+				<div class="w3-card w3-hover-shadow">
+					<a href="models/23_medusae/album.html">
+						<img src="models/23_medusae/cover.jpg" class="w3-image w3-round w3-block" alt="Medusae">
+						<div class="w3-container w3-center">
+							<p>Medusae</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
+				<div class="w3-card w3-hover-shadow">
+					<a href="models/22_command_terrain/album.html">
+						<img src="models/22_command_terrain/cover.jpg" class="w3-image w3-round w3-block" alt="Command Edition Terrain">
+						<div class="w3-container w3-center">
+							<p>Command Edition Terrain</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/21_500_points_of_necrons/album.html">
 						<img src="models/21_500_points_of_necrons/cover.jpg" class="w3-image w3-round w3-block" alt="500 Points of Necrons">
@@ -30,7 +97,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/20_hexmark_destroyer/album.html">
 						<img src="models/20_hexmark_destroyer/cover.jpg" class="w3-image w3-round w3-block" alt="Hexmark Destroyer">
@@ -40,17 +107,17 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album AoS">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/19_myrmourn_banshees/album.html">
-						<img src="models/19_myrmourn_banshees/cover.jpg" class="w3-image w3-round w3-block" alt="Glaivewraith Stalkers">
+						<img src="models/19_myrmourn_banshees/cover.jpg" class="w3-image w3-round w3-block" alt="Myrmourn Banshees">
 						<div class="w3-container w3-center">
-							<p>Glaivewraith Stalkers</p>
+							<p>Myrmourn Banshees</p>
 						</div>
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album AoS">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/18_glaivewraith_stalkers/album.html">
 						<img src="models/18_glaivewraith_stalkers/cover.jpg" class="w3-image w3-round w3-block" alt="Glaivewraith Stalkers">
@@ -60,8 +127,7 @@
 					</a>
 				</div>
 			</div>
-		</div>		<div class="w3-row-padding">
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/17_necron_overlord/album.html">
 						<img src="models/17_necron_overlord/cover.jpg" class="w3-image w3-round w3-block" alt="Necron Overlord">
@@ -71,7 +137,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/16_lokhust_heavy_destroyer/album.html">
 						<img src="models/16_lokhust_heavy_destroyer/cover.jpg" class="w3-image w3-round w3-block" alt="Lokhust Heavy Destroyer">
@@ -81,7 +147,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/15_skorpekh_destroyers/album.html">
 						<img src="models/15_skorpekh_destroyers/cover.jpg" class="w3-image w3-round w3-block" alt="Skorpekh Destroyers and Canoptek Plasmacyte">
@@ -91,7 +157,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/14_necron_warriors/album.html">
 						<img src="models/14_necron_warriors/cover.jpg" class="w3-image w3-round w3-block" alt="Necron Warriors and Canoptek Scarab Swarms">
@@ -101,8 +167,7 @@
 					</a>
 				</div>
 			</div>
-		</div>		<div class="w3-row-padding">
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album Other">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/13_powerwolf_board_game/album.html">
 						<img src="models/13_powerwolf_board_game/cover.jpg" class="w3-image w3-round w3-block" alt="Powerwolf Figures">
@@ -112,7 +177,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/12_veteran_guardsmen/album.html">
 						<img src="models/12_veteran_guardsmen/cover.jpg" class="w3-image w3-round w3-block" alt="Veteran Guardsmen Kill Team">
@@ -122,7 +187,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/11_intercessors/album.html">
 						<img src="models/11_intercessors/cover.jpg" class="w3-image w3-round w3-block" alt="Space Marine Intercessors">
@@ -132,7 +197,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album AoS">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/10_skeleton_warriors/album.html">
 						<img src="models/10_skeleton_warriors/cover.jpg" class="w3-image w3-round w3-block" alt="Skeleton Warriors">
@@ -142,8 +207,7 @@
 					</a>
 				</div>
 			</div>
-		</div>		<div class="w3-row-padding">
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/9_trukk/album.html">
 						<img src="models/9_trukk/cover.jpg" class="w3-image w3-round w3-block" alt="Trukk">
@@ -153,7 +217,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k AoS">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/8_khorne_start_collecting/album.html">
 						<img src="models/8_khorne_start_collecting/cover.jpg" class="w3-image w3-round w3-block" alt="Khorne Start Collecting">
@@ -163,7 +227,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k AoS">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/7_bloodcrushers/album.html">
 						<img src="models/7_bloodcrushers/cover.jpg" class="w3-image w3-round w3-block" alt="Bloodcrushers">
@@ -173,7 +237,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k AoS">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/6_blood_throne/album.html">
 						<img src="models/6_blood_throne/cover.jpg" class="w3-image w3-round w3-block" alt="Blood Throne">
@@ -183,8 +247,7 @@
 					</a>
 				</div>
 			</div>
-		</div>		<div class="w3-row-padding">
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k AoS">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/5_bloodletters/album.html">
 						<img src="models/5_bloodletters/cover.jpg" class="w3-image w3-round w3-block" alt="Bloodletters">
@@ -194,7 +257,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/4_ork_boyz/album.html">
 						<img src="models/4_ork_boyz/cover.jpg" class="w3-image w3-round w3-block" alt="Ork Boyz">
@@ -204,7 +267,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/3_gretchin/album.html">
 						<img src="models/3_gretchin/cover.jpg" class="w3-image w3-round w3-block" alt="Gretchin">
@@ -214,7 +277,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/2_ork_boy_contest/album.html">
 						<img src="models/2_ork_boy_contest/cover.jpg" class="w3-image w3-round w3-block" alt="Ork Boy Contest Entry">
@@ -224,8 +287,7 @@
 					</a>
 				</div>
 			</div>
-		</div>		<div class="w3-row-padding">
-			<div class="w3-quarter">
+			<div class="w3-col m4 l3 w3-padding-small album 40k">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/1_sample_marine/album.html">
 						<img src="models/1_sample_marine/cover.jpg" class="w3-image w3-round w3-block" alt="Free Sample Space Marine">
@@ -235,10 +297,41 @@
 					</a>
 				</div>
 			</div>
+
 		</div>
 		<div class="w3-container w3-center w3-border-top w3-margin-top w3-margin-left m3-margin-right">
 			<p>For information about commissions: <a href="mailto:commissions@picturesofmymodels.com">commissions@picturesofmymodels.com</a></p>
 			<p>For anything else: <a href="mailto:info@picturesofmymodels.com">info@picturesofmymodels.com</a></p>
 		</div>
+		<script>
+			function filter(button) {
+				var albums = document.getElementsByClassName("album");
+				var buttons = document.getElementsByClassName("filter");
+				for(var i = 0; i < albums.length; i++) {
+					if( !albums[i].classList.contains("Extra") ) {
+						albums[i].style.display = "block";
+					} else {
+						albums[i].style.display = "none";
+					}
+				}
+				for(var i = 0; i < buttons.length; i++) {
+					buttons[i].disabled = false;
+				}
+				button.disabled = true;
+				if( button.id === "showAll" ) {
+					document.getElementById("showAll").style.display = "none";
+					return;
+				} else {
+					document.getElementById("showAll").style.display = "inline-block";
+				}
+				for(var i = 0; i < albums.length; i++) {
+					if( !albums[i].classList.contains(button.id) ) {
+						albums[i].style.display = "none";
+					} else {
+						albums[i].style.display = "block";
+					}
+				}
+			}
+		</script>
 	</body>
 </html>

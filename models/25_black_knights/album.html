@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Black Knights</title>
+		<style>
+			.back {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			#modalImage {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body class="w3-2017-shaded-spruce">
+		<div class="w3-container w3-center w3-border-bottom w3-margin-bottom w3-margin-left w3-margin-right">
+			<a href="../../index.html" class="w3-padding back">
+				<i class="fa fa-arrow-left w3-xxxlarge"></i>
+			</a>
+			<h1>Black Knights</h1>
+			<p>Painting skeletons is always fun and satisfying, and these guys had some nice extra details like vines and leaves. I probably used too many subassemblies painting them, but it made painting the horse cloaks easier, even if everything else was harder. Also, I tried to paint on the scratched edges of the armour manually with a fine brush to try and up my skills, but I just couldn't get it to look good at all. I switched back to drybrushing and it worked way better, so even though it's so easy it feels like cheating, I'm probably going to keep drybrushing scratches and damage for a long time.</p>
+		</div>
+		<div class="w3-row-padding">
+			<div class="w3-third">
+				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_3.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_4.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="2_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="2_3.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="2_4.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="3_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+		</div>
+		<div class="w3-container w3-border-top w3-margin-top w3-margin-left w3-margin-right">
+			<h1>Paints Used:</h1>
+			<ul>
+				<li><b>Bone:</b><i> Zandri Dust, Seraphim Sepia all over, drybrush/highlight Ushabti Bone, highlight Screaming Skull</i></li>				<li><b>Fabric:</b><i> Abaddon Black, heavy drybrush Eshin Grey and Dawnstone</i></li>				<li><b>Armour:</b><i> Abaddon Black, drybrush Leadbelcher, highlight Stormhost Silver</i></li>				<li><b>Metal:</b><i> Leadbelcher, Nuln Oil all over, highlight Stormhost Silver</i></li>				<li><b>Old Brass:</b><i> Balthasar Gold, Nihilakh Oxide all over, highlight Balthasar Gold and Sycorax Bronze</i></li>				<li><b>Rotting Flesh:</b><i> Rakarth Flesh, Reikland Fleshshade all over, highlight Flayed One Flesh</i></li>				<li><b>Vines:</b><i> Dryad Bark, Agrax Earthshade all over, highlight Gorthor Brown</i></li>				<li><b>Leaves:</b><i> Waaagh Flesh, Biel-tan Green all over, highlight Warboss Green and Skarsnik Green</i></li>				<li><b>Sword Gem:</b><i> Vallejo White, Druchii Violet all over, Ardcoat</i></li>				<li><b>Base:</b><i> Vallejo Brown Earth Texture, Agrax Earthshade all over, drybrush Screaming Skull, Gamers Grass Dry Tufts and TinyTufts Beige, Steel Legion Drab rim</i></li>
+			</ul>
+		</div>
+
+		<div id="imageModal" class="w3-modal" onclick="this.style.display='none'">
+			<img class="w3-modal-content w3-block" id="modalImage">
+		</div>
+
+		<script>
+			function showImage(image) {
+				document.getElementById("modalImage").src = image.src;
+				document.getElementById("imageModal").style.display = "block";
+			}
+		</script>
+	</body>
+</html>
