@@ -38,11 +38,7 @@ $$index_image$$
 				var albums = document.getElementsByClassName("album");
 				var buttons = document.getElementsByClassName("filter");
 				for(var i = 0; i < albums.length; i++) {
-					if( !albums[i].classList.contains("Extra") ) {
-						albums[i].style.display = "block";
-					} else {
-						albums[i].style.display = "none";
-					}
+					albums[i].style.display = "block";
 				}
 				for(var i = 0; i < buttons.length; i++) {
 					buttons[i].disabled = false;

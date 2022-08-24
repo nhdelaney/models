@@ -38,16 +38,13 @@ for album_num in reversed(sorted(list(albums.keys()))):
     album_html = album_html.replace('$$colours$$', colour_html)
 
     album_categories = ''
-    album_style = ''
     for i in range(len(album['content']['category'])):
         album_categories += album['content']['category'][i]
-        if album['content']['category'][i] == 'Extra':
-            album_style = ' style="display: none"'
         if i < len(album['content']['category']) - 1:
             album_categories += ' '
         
 
-    index_image_html += ('\t\t\t<div class="w3-col m4 l3 w3-padding-small album ' + album_categories + '"' + album_style + '>\n'
+    index_image_html += ('\t\t\t<div class="w3-col m4 l3 w3-padding-small album ' + album_categories + '">\n'
                          '\t\t\t\t<div class="w3-card w3-hover-shadow">\n'
                          '\t\t\t\t\t<a href="models/' + album['path'] + '/album.html">\n'
                          '\t\t\t\t\t\t<img src="models/' + album['path'] + '/cover.jpg" '

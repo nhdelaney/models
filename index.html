@@ -37,7 +37,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="w3-col m4 l3 w3-padding-small album Extra" style="display: none">
+			<div class="w3-col m4 l3 w3-padding-small album Extra">
 				<div class="w3-card w3-hover-shadow">
 					<a href="models/26_skink_handler/album.html">
 						<img src="models/26_skink_handler/cover.jpg" class="w3-image w3-round w3-block" alt="Wife's First Model">
@@ -308,11 +308,7 @@
 				var albums = document.getElementsByClassName("album");
 				var buttons = document.getElementsByClassName("filter");
 				for(var i = 0; i < albums.length; i++) {
-					if( !albums[i].classList.contains("Extra") ) {
-						albums[i].style.display = "block";
-					} else {
-						albums[i].style.display = "none";
-					}
+					albums[i].style.display = "block";
 				}
 				for(var i = 0; i < buttons.length; i++) {
 					buttons[i].disabled = false;
