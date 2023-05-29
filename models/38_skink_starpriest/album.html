@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Skink Starpriest</title>
+		<style>
+			.back {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			#modalImage {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body class="w3-2017-shaded-spruce">
+		<div class="w3-container w3-center w3-border-bottom w3-margin-bottom w3-margin-left w3-margin-right">
+			<a href="../../index.html" class="w3-padding back">
+				<i class="fa fa-arrow-left w3-xxxlarge"></i>
+			</a>
+			<h1>Skink Starpriest</h1>
+			<p>Really fun little guy, got to try a lot of new stuff painting him. Probably most proud of his jade sword, but the gloss prevents it from showing up well with my poor camera skills.</p>
+		</div>
+		<div class="w3-row-padding">
+			<div class="w3-third">
+				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+		</div>
+		<div class="w3-container w3-border-top w3-margin-top w3-margin-left w3-margin-right">
+			<h1>Paints Used:</h1>
+			<ul>
+				<li><b>Skin:</b><i> Thousand Sons Blue, Nuln Oil all over, highlight Ahriman Blue and Fenrisian Grey</i></li>				<li><b>Scales:</b><i> Thousand Sons Blue, Nuln Oil all over, highlight Kabalite Green and Sybarite Green</i></li>				<li><b>Gold:</b><i> Retributor Armour, Reikland Fleshshade all over, highlight Liberator Gold and small parts of Auric Armour Gold</i></li>				<li><b>Steel:</b><i> Leadbelcher, Agrax Earthshade all over, highlight Stormhost Silver</i></li>				<li><b>Wood:</b><i> Dryad Bark, Agrax Earthshade, highlight Gorthor Brown</i></li>				<li><b>Bone:</b><i> Zandri Dust, Seraphim Sepia all over, highlight Ushabti Bone and Screaming Skull</i></li>				<li><b>Feathers:</b><i> Vallejo White, mix of Khorne Red and Thousand Sons Blue heavily glazed bottom 2/3rds, glaze Khorne Red at base, Druchii Violet all over twice, glaze Khorne Red at base again, drybrush tips Vallejo White</i></li>				<li><b>Base stone:</b><i> Mechanicus Standard Grey, Agrax Earthshade all over, drybrush Dawnstone and Administratum Grey</i></li>				<li><b>Jade Blade:</b><i> Waaagh Flesh, Nuln Oil all over twice, highlight and draw cracks with Kabalite Green and Sybarite Green, Ardcoat</i></li>				<li><b>Base:</b><i> Vallejo Brown Earth Texture, Agrax Earthshade all over, drybrush Screaming Skull, Gamers Grass TinyTufts Beige, Steel Legion Drab rim</i></li>
+			</ul>
+		</div>
+
+		<div id="imageModal" class="w3-modal" onclick="this.style.display='none'">
+			<img class="w3-modal-content w3-block" id="modalImage">
+		</div>
+
+		<script>
+			function showImage(image) {
+				document.getElementById("modalImage").src = image.src;
+				document.getElementById("imageModal").style.display = "block";
+			}
+		</script>
+	</body>
+</html>

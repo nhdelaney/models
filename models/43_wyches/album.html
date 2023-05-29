@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Drukhari Wyches</title>
+		<style>
+			.back {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			#modalImage {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body class="w3-2017-shaded-spruce">
+		<div class="w3-container w3-center w3-border-bottom w3-margin-bottom w3-margin-left w3-margin-right">
+			<a href="../../index.html" class="w3-padding back">
+				<i class="fa fa-arrow-left w3-xxxlarge"></i>
+			</a>
+			<h1>Drukhari Wyches</h1>
+			<p>Inspired by painting the Ur-Ghuls, I wanted to paint some more Drukhari, and started with the most basic ones. I was intimidated by these for a long time because of the small size and the faces, but I think they turned out great and were actually really fun. Especially proud of the power sword because I didn't really know where I was going when I started painting it. I also added small red cloth accents to possibly use them as Ynnari in the future.</p>
+		</div>
+		<div class="w3-row-padding">
+			<div class="w3-third">
+				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="2_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="3_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+		</div>
+		<div class="w3-container w3-border-top w3-margin-top w3-margin-left w3-margin-right">
+			<h1>Paints Used:</h1>
+			<ul>
+				<li><b>Armour:</b><i> Incubi Darkness, Nuln Oil all over, thick highlight Kabalite Green, edge highlight Sybarite Green</i></li>				<li><b>Skin:</b><i> Rakarth Flesh, Reikland Fleshshade all over, highlight Rakarth Flesh and Pallid Wych Flesh</i></li>				<li><b>Red Hair:</b><i> Mephiston Red, Carroburg Crimson all over, highlight Evil Sunz Scarlet and Wild Rider Red</i></li>				<li><b>Red Cloth:</b><i> Mephiston Red, Nuln Oil all over, highlight Mephiston Red and Evil Sunz Scarlet </i></li>				<li><b>Clothing:</b><i> Abaddon Black, highlight with glazes of Incubi Darkness and Thunderhawk Blue</i></li>				<li><b>Steel:</b><i> Leadbelcher, Nuln Oil all over, highlight Stormhost Silver</i></li>				<li><b>Blades/Weapons:</b><i> Leadbelcher, Biel-Tan Green all over, highlight Stormhost Silver</i></li>				<li><b>Flayed Skin:</b><i> Rakarth Flesh or Cadian Fleshstone or Kislev Flesh, Agrax Earthshade all over, highlight same as base colour</i></li>				<li><b>Leather:</b><i> Dryad Bark, Agrax Earthshade all over, highlight Gorthor Brown</i></li>				<li><b>Gun Casings:</b><i> Abaddon Black, highlight Eshin Grey and Dawnstone</i></li>				<li><b>Bone:</b><i> Zandri Dust, Seraphim Sepia all over, highlight Ushabti Bone and Screaming Skull</i></li>				<li><b>Ur-Ghul Head:</b><i> Skin: Ulthuan Grey, Coelia Greenshade all over, Carroburg Crimson on face, drybrush Ulthuan Grey, glaze highlights of Vallejo White</i></li>				<li><b>Eyes:</b><i> Vallejo White, Abaddon Black pupils</i></li>				<li><b>Mouths:</b><i> Screamer Pink Tongue, Vallejo White teeth, small amount of Reikland Fleshshade on edges of teeth</i></li>				<li><b>Tubes/Vials:</b><i> Vallejo White, Hexwraith Flame all over</i></li>				<li><b>Blast Pistol Glow:</b><i> Vallejo White, Flash Gitz Yellow, Carroburg Crimson all over but fade slightly at edges with water, highlight centre with Flash Gitz Yellow and Vallejo White</i></li>				<li><b>Blast Pistol Barrel:</b><i> Leadbelcher, Carroburg Crimson blending with Druchii Violet closer to tip, glaze Abaddon Black to blacken tip</i></li>				<li><b>Power Sword:</b><i> Vallejo White, glaze Kabalite Green to make darker sections with gradients to white, two coats of Hexwraith Flame all over, Vallejo White on edges, centre line and details. Add lines of Vallejo White from centre to edge, and glaze onto spikes at bottom. Ardcoat</i></li>				<li><b>Soulstone:</b><i> Retributor Armour, Reikland Fleshshade all over, highlight Retributor Armour. Vallejo White centre, Blood for the Blood God</i></li>				<li><b>Base:</b><i> Vallejo White Pumice, Mechanicus Standard Grey, Nuln Oil all over, drybrush Screaming Skull, Mechanicus Standard Grey rim </i></li>
+			</ul>
+		</div>
+
+		<div id="imageModal" class="w3-modal" onclick="this.style.display='none'">
+			<img class="w3-modal-content w3-block" id="modalImage">
+		</div>
+
+		<script>
+			function showImage(image) {
+				document.getElementById("modalImage").src = image.src;
+				document.getElementById("imageModal").style.display = "block";
+			}
+		</script>
+	</body>
+</html>

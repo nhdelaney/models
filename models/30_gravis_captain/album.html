@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Captain in Gravis Armour</title>
+		<style>
+			.back {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			#modalImage {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body class="w3-2017-shaded-spruce">
+		<div class="w3-container w3-center w3-border-bottom w3-margin-bottom w3-margin-left w3-margin-right">
+			<a href="../../index.html" class="w3-padding back">
+				<i class="fa fa-arrow-left w3-xxxlarge"></i>
+			</a>
+			<h1>Captain in Gravis Armour</h1>
+			<p>The captain from Know No Fear. Incredibly proud of the smoothness of the gradient on the cloak. It was great glazing practice and ended up great. Power swords are always fun too.</p>
+		</div>
+		<div class="w3-row-padding">
+			<div class="w3-third">
+				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="2_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+		</div>
+		<div class="w3-container w3-border-top w3-margin-top w3-margin-left w3-margin-right">
+			<h1>Paints Used:</h1>
+			<ul>
+				<li><b>Blue Armour:</b><i> Macragge Blue, Nuln Oil in recesses, edge highlight Calgar Blue, Fenrisian Grey on the sharpest points</i></li>				<li><b>Steel:</b><i> Leadbelcher, Nuln Oil all over, edge hightlight Stormhost Silver</i></li>				<li><b>Gold:</b><i> Retributor Armour, Reikland Fleshshade all over, highlight Liberator Gold</i></li>				<li><b>Black:</b><i> Abaddon Black, edge highlight Eshin Grey and Dawnstone</i></li>				<li><b>Leather:</b><i> Dryad Bark, Agrax Earthshade all over, edge highlight Gorthor Brown</i></li>				<li><b>Cloak:</b><i> Khorne Red, Carroburg Crimson all over, glaze Evil Sunz Scarlet and Wild Rider Red to create gradients and edge highlights, very thinly glaze Khorne Red to even out colour transitions</i></li>				<li><b>Power Sword:</b><i> Glaze Ahriman Blue all over, lightning Ahriman Blue, mix Ahriman Blue and Vallejo white up to pure white to highlight</i></li>				<li><b>Purity Seal Wax:</b><i> Screamer Pink, Carroburg Crimson all over, highlight Pink Horror</i></li>				<li><b>Purity Seal Paper:</b><i> Rakarth Flesh, Seraphim Sepia all over, highlight Pallid Wych Flesh, Dryad Bark text</i></li>				<li><b>Armour Eye Lenses:</b><i> Mephiston Red</i></li>				<li><b>Base:</b><i> Vallejo White Pumica, Mechanicus Standard Grey, Nuln Oil all over, drybrush Screaming Skull, Gamers Grass TinyTufts Beige, Steel Legion Drab rim</i></li>
+			</ul>
+		</div>
+
+		<div id="imageModal" class="w3-modal" onclick="this.style.display='none'">
+			<img class="w3-modal-content w3-block" id="modalImage">
+		</div>
+
+		<script>
+			function showImage(image) {
+				document.getElementById("modalImage").src = image.src;
+				document.getElementById("imageModal").style.display = "block";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Blitz Bowl Dwarves</title>
+		<style>
+			.back {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			#modalImage {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body class="w3-2017-shaded-spruce">
+		<div class="w3-container w3-center w3-border-bottom w3-margin-bottom w3-margin-left w3-margin-right">
+			<a href="../../index.html" class="w3-padding back">
+				<i class="fa fa-arrow-left w3-xxxlarge"></i>
+			</a>
+			<h1>Blitz Bowl Dwarves</h1>
+			<p>Like the human team, a little overboard on depth of colour, really proud of how shiny the armour looks though. Also pretty happy with the tattoos and beard colours, very fun to paint.</p>
+		</div>
+		<div class="w3-row-padding">
+			<div class="w3-third">
+				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="2_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+		</div>
+		<div class="w3-container w3-border-top w3-margin-top w3-margin-left w3-margin-right">
+			<h1>Paints Used:</h1>
+			<ul>
+				<li><b>Blue Armour:</b><i> Thousand Suns Blue, Nuln Oil all over, glaze Thousand Suns Blue near edges, edge highlight Thousand Suns Blue, Ahriman Blue, Fenrisian Grey</i></li>				<li><b>Orange Hair:</b><i> Wild Rider Red to make painting orange possible. Trollslayer Orange completely covering red, Carroburg Crimson all over, highlight Trollslayer Orange</i></li>				<li><b>Dark Grey Hair:</b><i> Eshin Grey, Nuln Oil all over, highlight Eshin Grey and Dawnstone</i></li>				<li><b>Light Grey Hair:</b><i> Dawnstone, Nuln Oil all over, highlight Dawnstone and Administratum Grey</i></li>				<li><b>Dark Brown Hair:</b><i> Dryad Bark, Agrax Earthshade all over, highlight Dryad Bark and Gorthor Brown</i></li>				<li><b>Light Brown Hair:</b><i> Mournfang Brown, Agrax Earthshade all over, highlight Mournfang Brown and Skrag Brown</i></li>				<li><b>Blonde Hair:</b><i> Zandri Dust, Agrax Earthshade all over, highlight Zandri Dust and Ushabti Bone</i></li>				<li><b>Gems:</b><i> Waaagh Flesh, Nuln Oil all over, highlight Warboss Green and Skarsnik Green</i></li>				<li><b>Beer Foam:</b><i> Zandri Dust, Reikland Fleshshade all over, highlight Zandri Dust</i></li>				<li><b>Warpaint:</b><i> Thunderhawk Blue, Fenrisian Grey</i></li>				<li><b>Steel:</b><i> Leadbelcher, Nuln Oil all over, highlight Stormhost Silver</i></li>				<li><b>Leather:</b><i> Dryad Bark, Agrax Earthshade all over, highlight Gorthor Brown</i></li>				<li><b>Skulls:</b><i> Zandri Dust, Seraphim Sepia all over, highlight Ushabti Bone and Screaming Skull</i></li>				<li><b>Grass:</b><i> Waaagh Flesh, Biel-tan Green all over, highlight Warboss Green and Skarsnik Green</i></li>				<li><b>Ball:</b><i> Mournfang Brown, Agrax Earthshade all over, highlight Skrag Brown</i></li>				<li><b>Base:</b><i> Vallejo White Pumice just to cover slots and make a little texture, Mechanicus Standard Grey, Nuln Oil all over, highlight Dawnstone</i></li>
+			</ul>
+		</div>
+
+		<div id="imageModal" class="w3-modal" onclick="this.style.display='none'">
+			<img class="w3-modal-content w3-block" id="modalImage">
+		</div>
+
+		<script>
+			function showImage(image) {
+				document.getElementById("modalImage").src = image.src;
+				document.getElementById("imageModal").style.display = "block";
+			}
+		</script>
+	</body>
+</html>

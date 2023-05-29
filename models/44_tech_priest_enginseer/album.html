@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Tech-Priest Enginseer</title>
+		<style>
+			.back {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			#modalImage {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body class="w3-2017-shaded-spruce">
+		<div class="w3-container w3-center w3-border-bottom w3-margin-bottom w3-margin-left w3-margin-right">
+			<a href="../../index.html" class="w3-padding back">
+				<i class="fa fa-arrow-left w3-xxxlarge"></i>
+			</a>
+			<h1>Tech-Priest Enginseer</h1>
+			<p>A very difficult colour decision because I wanted him to pair well with my Sentinel, but not exactly match. Very very proud of the freehand on the cloak, and I think the colours tie it together nicely and contrast well with the base. I still went with a classic Mars-looking base because it really just works for Mechanicus and it looked fun, even if the base doesn't match the Sentinel.</p>
+		</div>
+		<div class="w3-row-padding">
+			<div class="w3-third">
+				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="2_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="3_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+		</div>
+		<div class="w3-container w3-border-top w3-margin-top w3-margin-left w3-margin-right">
+			<h1>Paints Used:</h1>
+			<ul>
+				<li><b>Cloak:</b><i> Celestra Grey, Nuln Oil all over, highlight Ulthuan Grey and Vallejo White</i></li>				<li><b>Belt/Pouches/Holster:</b><i> Celestra Grey, Agrax Earthshade all over, highlight Ulthuan Grey and Vallejo White </i></li>				<li><b>Blue:</b><i> Thunderhawk Blue, Nuln Oil all over, highlight Thunderhawk Blue and Fenrisian Grey</i></li>				<li><b>Steel:</b><i> Leadbelcher, Nuln Oil all over, highlight Stormhost Silver</i></li>				<li><b>Bronze:</b><i> Balthazar Gold, Nuln Oil all over, highlight Sycorax Bronze</i></li>				<li><b>Skin:</b><i> Rakarth Flesh, Reikland Fleshshade all over, highlight Rakarth Flesh and Pallid Wych Flesh</i></li>				<li><b>Eye:</b><i> Vallejo White, Abaddon Black pupil</i></li>				<li><b>Servo-Skull:</b><i> Zandri Dust, Seraphim Sepia all over, highlight Ushabti Bone and Screaming Skull</i></li>				<li><b>Axe Blade:</b><i> Vallejo White, mix of Ahriman Blue and Lahmian Medium all over, second coat near base, Vallejo White glaze on edge, edge highlight and detail Vallejo White </i></li>				<li><b>Buttons:</b><i> Vallejo White, Mephiston Red or Skarsnik Green</i></li>				<li><b>Lenses:</b><i> Mephiston Red, Ardcoat</i></li>				<li><b>Lamp:</b><i> Vallejo White, mix of Flash Gitz Yellow and Lahmian Medium, Ardcoat</i></li>				<li><b>Warning Light:</b><i> Vallejo White, Blood for the Blood God</i></li>				<li><b>Screen:</b><i> Kabalite Green, detail Sybarite Green, Ardcoat</i></li>				<li><b>Base:</b><i> Vallejo Brown Earth, Reikland Fleshshade all over, drybrush Trollslayer Orange onto base and model for dust. Drybrush Steel Legion Drab on white only to dim Trollslayer Orange that was too bright over Vallejo White. Steel Legion Drab rim</i></li>
+			</ul>
+		</div>
+
+		<div id="imageModal" class="w3-modal" onclick="this.style.display='none'">
+			<img class="w3-modal-content w3-block" id="modalImage">
+		</div>
+
+		<script>
+			function showImage(image) {
+				document.getElementById("modalImage").src = image.src;
+				document.getElementById("imageModal").style.display = "block";
+			}
+		</script>
+	</body>
+</html>

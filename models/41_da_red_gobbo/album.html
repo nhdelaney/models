@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Da Red Gobbo and Bounca</title>
+		<style>
+			.back {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			#modalImage {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body class="w3-2017-shaded-spruce">
+		<div class="w3-container w3-center w3-border-bottom w3-margin-bottom w3-margin-left w3-margin-right">
+			<a href="../../index.html" class="w3-padding back">
+				<i class="fa fa-arrow-left w3-xxxlarge"></i>
+			</a>
+			<h1>Da Red Gobbo and Bounca</h1>
+			<p>A fun Christmas gift from my wife, I painted him in May in case he took forever to finish. But then I ended up painting him in like 3 days. Really fun model with a lot of character, going to try and use him in-game as Zodgrod Wortsnagga, makes sense for Gretchin to follow him I think.</p>
+		</div>
+		<div class="w3-row-padding">
+			<div class="w3-third">
+				<img src="1_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="1_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="2_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+				<img src="2_2.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+			<div class="w3-third">
+				<img src="3_1.jpg" class="w3-margin-bottom w3-image w3-round" onclick="showImage(this)">
+
+			</div>
+		</div>
+		<div class="w3-container w3-border-top w3-margin-top w3-margin-left w3-margin-right">
+			<h1>Paints Used:</h1>
+			<ul>
+				<li><b>Green Skin/Tree:</b><i> Waaagh Flesh, Biel-tan Green all over, highlight Warboss Green and Skarsnik Green</i></li>				<li><b>Coat Red:</b><i> Khorne Red, Nuln Oil all over, highlight Khorne Red, Evil Sunz Scarlet, Wild Rider Red</i></li>				<li><b>Coat White:</b><i> Vallejo White, Nuln Oil all over, highlight Vallejo White</i></li>				<li><b>Squig Skin:</b><i> Mephiston Red, Carroburg Crimson all over, second layer of Carroburg Crimson on hair, highlight Evil Sunz Scarlet and Wild Rider Red</i></li>				<li><b>Squig Tongue:</b><i> Screamer Pink, Druchii Violet all over, Ardcoat</i></li>				<li><b>Squig Eyes/Claws:</b><i> Abaddon Black, Ardcoat</i></li>				<li><b>Steel:</b><i> Leadbelcher, Nuln Oil all over, edge hightlight Stormhost Silver</i></li>				<li><b>Wood:</b><i> Dryad Bark, Agrax Earthshade all over, highlight Gorthor Brown</i></li>				<li><b>Leather:</b><i> Dryad Bark, Agrax Earthshade all over, edge highlight Gorthor Brown</i></li>				<li><b>Wrappings:</b><i> Rakarth Flesh, Agrax Earthshade all over, highlight Pallid Wych Flesh</i></li>				<li><b>Medals:</b><i> Ahriman Blue and Kabalite Green, Nuln Oil all over, highlight with original colours</i></li>				<li><b>Wire:</b><i> Waaagh Flesh, Nuln Oil all over, highlight Waaagh Flesh</i></li>				<li><b>Lights:</b><i> Vallejo White, mix of Flash Gitz Yellow and Lahmian Medium all over</i></li>				<li><b>Dynamite:</b><i> Mephiston Red. Nuln Oil all over, highlight Mephiston Red and Evil Sunz Scarlet</i></li>				<li><b>Smoke:</b><i> Vallejo White, wet bland Ulthuan Grey, Celestra Grey, Mechanicus Standard Grey and Abaddon Black, highlight with Flash Gitz Yellow and glaze of Flash Gitz Yellow</i></li>				<li><b>Bulbs:</b><i> Retributor Armour, Reikland Fleshshade all over, highlight Auric Armour Gold</i></li>				<li><b>Beard:</b><i> Celestra Grey, Nuln Oil all over, highlight Ulthuan Grey and Vallejo White</i></li>				<li><b>Eye Lenses:</b><i> Vallejo White, Blood for the Blood God </i></li>				<li><b>Snow:</b><i> Vallejo White, mix of Ahriman Blue and Lahmian Medium all over</i></li>
+			</ul>
+		</div>
+
+		<div id="imageModal" class="w3-modal" onclick="this.style.display='none'">
+			<img class="w3-modal-content w3-block" id="modalImage">
+		</div>
+
+		<script>
+			function showImage(image) {
+				document.getElementById("modalImage").src = image.src;
+				document.getElementById("imageModal").style.display = "block";
+			}
+		</script>
+	</body>
+</html>
